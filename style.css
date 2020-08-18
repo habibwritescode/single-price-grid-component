@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    align-items: center;
+    background-color: rgb(221, 221, 221);
+    display: flex;
+    font-family: 'Karla', sans-serif;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.main-container{
+    margin: 0 auto;
+    width: 85vw;
+}
+
+.community{
+    background-color: white;
+    padding: 25px 20px;
+}
+
+.heading{
+    color:  hsl(179, 62%, 43%);
+    font-size: 21px;
+}
+
+.sub-heading{
+    color:  hsl(71, 73%, 54%);
+    padding: 15px 0;
+}
+
+.gain-access{
+    color: hsl(218, 22%, 67%);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.subscription{
+    background-color: hsl(179, 62%, 43%);
+    padding: 25px 20px;
+}
+
+.subscription h2{
+    color: hsl(204, 43%, 93%);
+    font-size:19px;
+}
+
+.pricing{
+    color: hsl(204, 43%, 93%);
+    padding: 20px 0 10px;
+}
+
+.subscription span{
+    color: white;
+    font-size: 25px;
+}
+
+.access{
+    color: hsl(204, 43%, 93%);
+    padding-bottom: 40px;
+}
+
+button{
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    border-radius: 7px;
+    color: white;
+    padding: 15px;
+    width: 100%;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+.why{
+    background-color: hsl(179, 60%, 50%);
+    padding: 25px 20px;
+}
+
+.why h2{
+    font-size: 19px;
+    color: hsl(204, 43%, 93%);
+    padding-bottom: 20px;
+}
+
+.why p{
+    color: hsl(204, 43%, 93%);
+    font-size: 13px;
+    padding-bottom: 7px;
+}
+
+
+@media only screen and (min-width: 500px) {
+    .main-container{
+        width: 60vw;
+    }
+    .flex-container{
+        flex-direction: row;
+    }
+
+    .community, .subscription, .why{
+        padding: 30px 40px;
+    }
+
+    .subscription, .why{
+        width: 50%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .main-container{
+        width: 45vw;
+    }
+}
